@@ -117,7 +117,7 @@ jobs:
             env:
                 SUBSCRIPTION_NAME: ${{ env.DNETBOT_NAME }}-proxy-returnmessage
                 EVENTGRID_DOMAIN: ${{ env.DNETBOT_NAME }}-eventgrid-domain
-                ENDPOINT_ADDRESS: https://digitalnimbusbot-proxy.azurewebsites.net/api/EventGrid/ReturnMessage?token=${{ secrets.WEBHOOK_TOKEN }}
+                ENDPOINT_ADDRESS: https://digitalnimbusbot-proxy.azurewebsites.net/api/EventGrid/ReturnMessage?token=AYyY3VJiURF0IA418lcReNowB7o02ejlNmmcFWHm0pw=
                 TOPIC_RESOURCE: /subscriptions/${{ secrets.SUBSCRIPTION_ID }}/resourceGroups/${{ env.AZURE_RG }}/providers/Microsoft.EventGrid/domains/${{ env.DNETBOT_NAME }}-eventgrid-domain/topics/returnmessage
             with:
                 azcliversion: 2.14.2
